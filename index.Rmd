@@ -40,6 +40,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 This document was last updated on `r Sys.Date()` and is a series of questions and answers relating to the Pre-Registration Assignment taught in our MSc Research Methods course. 
 
+**Please note:** if viewing this blog on a phone, use landscape orientation rather than portrait for better functionality.
+
 # General Questions
 
 ### What is Pre-Registration?
