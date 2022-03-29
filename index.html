@@ -233,17 +233,29 @@ div.tocify {
 
 
 <style>
-
-.beginner, .intermediate, .advanced { 
-  font-variant: small-caps; 
-  font-weight: 800;
+h1:not(.title), #TOC > ul.tocify-header > li:first-child {
+  font-weight: bold; 
+  color: green; 
 }
-.beginner { color: #449654; }
-.intermediate { color: #357BB0; }
-.advanced { color: #6356A1; }
+
+h2, #TOC ul.tocify-subheader[data-tag="2"] > li.tocify-item {
+  color: blue; 
+}
+
+h3, #TOC ul.tocify-subheader[data-tag="3"] > li.tocify-item {
+  color: purple;
+  font-variant: small-caps; 
+}
+
+body{
+  font-family: Arial;
+}
 
 </style>
+<div id="this-blog" class="section level1">
+<h1>This blog</h1>
 <p>This document was last updated on 2022-03-29 and is a series of questions and answers relating to the Pre-Registration Assignment taught in our MSc Research Methods course.</p>
+</div>
 <div id="general-questions" class="section level1">
 <h1>General Questions</h1>
 <div id="what-is-pre-registration" class="section level3">
@@ -350,8 +362,8 @@ div.tocify {
 <p>With these assignments we are aiming to cover a variety of different elements - teaching research methods and statistics, teaching academic writing, teaching planning and design, giving some snapshot of what it is like to work with real data - but at the same time cater to the interests of a large diverse population (yourselves). The MSLQ study is nice in that it covers a range of topics and areas and it is something that we think you would all be interested in, to varying degrees, given that you have chosen to do this course - i.e. perhaps reflecting on your own reasoning might help generate questions and ideas for your discussions. There is also good research to suggest that working with real data in an area of interest is a good approach to making research methods accessible. Unfortunately we can’t just have everyone run their own project as there is a lot of knowledge and skill to develop first, not to mention ethical considerations. Hopefully though by the end of the process you see the benefits of the approach we use and that the a lot of the knowledge and skill you get from this project you can take forward into future assignments and into future projects.</p>
 </div>
 </div>
-<div id="research-questions-and-hypotheses" class="section level1">
-<h1>Research Questions and Hypotheses</h1>
+<div id="research-questions-hypotheses" class="section level1">
+<h1>Research Questions &amp; Hypotheses</h1>
 <div id="what-is-the-difference-between-a-research-question-and-a-hypothesis" class="section level3">
 <h3>What is the difference between a Research Question and a hypothesis?</h3>
 <p>A research question is really just the overarching question to your study, what you want to know, whereas the hypothesis is a clear, testable, falsifiable, operationalised statement about what you think will happen in the study. For example, “Is there a relationship between intrinsic motivation and engagement with peer assisted learning in a student population?” is a research question, whereas “We hypothesise that there will be a significant positive relationship between between intrinsic motivation and engagement with peer assisted learning in a student population, as measured through the MSLQ”. is a hypothesis. The research question can’t be falsified as it is unclear as to what constitute a relationship and there is no indication in terms of how the terms are measured. The hypothesis however can be tested and can be falsified - in that there will either be a significant positive relationship or not - and it is operationalised by saying that the variables are measured through the MSLQ.</p>

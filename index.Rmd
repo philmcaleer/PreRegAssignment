@@ -12,20 +12,31 @@ output:
 ---
 
 <style>
-
-.beginner, .intermediate, .advanced { 
-  font-variant: small-caps; 
-  font-weight: 800;
+h1:not(.title), #TOC > ul.tocify-header > li:first-child {
+  font-weight: bold; 
+  color: green; 
 }
-.beginner { color: #449654; }
-.intermediate { color: #357BB0; }
-.advanced { color: #6356A1; }
+
+h2, #TOC ul.tocify-subheader[data-tag="2"] > li.tocify-item {
+  color: blue; 
+}
+
+h3, #TOC ul.tocify-subheader[data-tag="3"] > li.tocify-item {
+  color: purple;
+  font-variant: small-caps; 
+}
+
+body{
+  font-family: Arial;
+}
 
 </style>
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
+# This blog
 
 This document was last updated on `r Sys.Date()` and is a series of questions and answers relating to the Pre-Registration Assignment taught in our MSc Research Methods course. 
 
@@ -133,7 +144,7 @@ You will actually need to create this for the full report so we when you have th
 
 With these assignments we are aiming to cover a variety of different elements - teaching research methods and statistics, teaching academic writing, teaching planning and design, giving some snapshot of what it is like to work with real data - but at the same time cater to the interests of a large diverse population (yourselves). The MSLQ study is nice in that it covers a range of topics and areas and it is something that we think you would all be interested in, to varying degrees, given that you have chosen to do this course - i.e. perhaps reflecting on your own reasoning might help generate questions and ideas for your discussions. There is also good research to suggest that working with real data in an area of interest is a good approach to making research methods accessible. Unfortunately we can't just have everyone run their own project as there is a lot of knowledge and skill to develop first, not to mention ethical considerations. Hopefully though by the end of the process you see the benefits of the approach we use and that the a lot of the knowledge and skill you get from this project you can take forward into future assignments and into future projects.
 
-# Research Questions and Hypotheses
+# Research Questions & Hypotheses
 
 ### What is the difference between a Research Question and a hypothesis?
 
