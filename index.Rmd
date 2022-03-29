@@ -1,6 +1,5 @@
 ---
 title: "Pre-Registration Assignment Common Questions and Answers"
-date: "`r Sys.Date()`"
 output: 
   html_document:
     toc: true
@@ -11,8 +10,6 @@ output:
     theme: "readable"
     highlight: "espresso"
 ---
-
-\newpage
 
 <style>
 
@@ -30,7 +27,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-This document was last updated on `r Sys.Date()`
+This document was last updated on `r Sys.Date()` and is a series of questions and answers relating to the Pre-Registration Assignment taught in our MSc Research Methods course. 
 
 # General Questions
 
