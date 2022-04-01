@@ -180,6 +180,10 @@ In reality you can have either but it probably makes sense to see if you can go 
 
 Really up to you and your group what works best for your question and your writing. The one thing we would say is that if you go with two paragraphs then remember they are all part of the same pre-registration and not completely different sections - meaning that you dont have to repeat yourself and you probably want to think about the linking sentence at the start of the second paragraph to keep the flow of the writing going. This blog is nice on writing paragraphs: https://blogs.lse.ac.uk/writingforresearch/2017/07/17/how-to-write-paragraphs-in-research-texts-articles-books-and-phds/
 
+### If we spot an issue with our Pre-Registration after submitting it and then change it, would that be HARKing? (added 01/04)
+
+HARKing is literally "hypothesising after the results are known"; meaning that you run an analysis on your data, look at that output, and then write the introduction and the hypothesis as though that was what you predicted all along. If however you write a Pre-Registration and then after that you do more reading and/ or new literature comes out before you actually complete your own study or analysis and based on new information you decide to change your Research Question or hypothesis slightly, you aren't actually doing anything wrong and in fact it would make sense to base your hypothesis on all available information. It would however still be ethically advisable to acknowledge that fact, i.e. somewhere in your report you would mention that you initially hypothesized X but after further review of the literature you amended your hypothesis to Y. This way you are being open and transparent. So long story short, changing your hypothesis based on further reading but BEFORE running an analysis or even looking at your data is completely fine. However, changing your hypothesis based on what you found in your analysis to make it look like that is what you predicted in the first place is definitely HARKing and should not be carried out.
+
 # Word counts and citations
 
 ### Is there a specific word count for each section?
@@ -327,6 +331,10 @@ First just to clarify - alternative hypothesis is basically the hypothesis that 
 ### Can we number our hypotheses such as H1, H2? (added 28/03)
 
 So actually this is bad practice for a number of reasons and we would discourage you from doing so. You will see people do it in papers but really it is a result of poor editing more often than not.  One reason not to do it are that H1 is the statistical abbreviation of the alternative hypothesis (H0 is the null). There is no H2 in statistics and having H1, H2 is really confusing for anyone that knows this. Another reason not to do this is that it likely means that you have used a bullet point somewhere labelling the two hypotheses and that is not good writing.
+
+### What would be an appropriate multiple comparison correction in this study? (added 01/04)
+
+Multiple comparison corrections are performed to help maintain the false positive rate at around the chosen level that we say we test at  - with the field standard being alpha = .05 (1 in 20 studies). When you run more studies and analyses you actually increase the false positive rate based on the Family Wise Error Rate; meaning that the false positive rate increases and you are more likely to find a false positive. When you run multiple analyses on the same data you should correct for multiple comparisons in order to maintain the false positive rate at the required level. This becomes slightly a grey area for people when it is different analyses on the same data with some arguing that you don't need to correct and others arguing that you do need to correct. The conservative approach is to correct for multiple comparisons regardless with the two most common approaches being Holm (sometimes called Holm-Bonferroni) and Bonferroni. 
 
 # Coding and R Markdown Decisions
 
