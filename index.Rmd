@@ -36,6 +36,10 @@ body{
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+add
+
+2. holm or bonferroni
+
 # This blog
 
 This document was last updated on `r Sys.Date()` and is a series of questions and answers relating to the Pre-Registration Assignment taught in our MSc Research Methods course. 
@@ -214,6 +218,14 @@ So again this really relates to the scale as remember when doing the Pre-Registr
 
 # Analytical Decisions
 
+### Do we need to reverse score the appropriate variables on the MSLQ? (added 05/04)
+
+No. Some of the questions on the MSLQ are meant to be reverse scored but you do not need to worry about this as it is done for you in the study we run - in the programme. The data you get is ready just to be summarised and does not need to be reverse scored. If you did reverse score the data we give you that would be undoing what needs to be done and would give you misleading results. So no reverse scoring needed here.
+
+### Is there a good way to check for someone who responds the with the same answer to each question? (added 05/04)
+
+One approach here would be to calculate the standard deviation of each participant. Anyone with a standard deviation of 0 or NA for their responses have responded with exactly the same answer to each question. For example, someone who responds 1, 1, 1, has a mean of 1 and a standard deviation of 0.  There are other approaches but that is potentially the quickest. One thing to note though is that some refer to this response pattern as "straightlining". Not all fields use this terms so it would be good to explain what the term means if you use it - e.g. "Straightlining, meaning that...., will be detected by...."
+
 ### What are the assumptions of a t-test and/or a correlation?
 
 The assumptions of a test are the characteristics of the data that should be checked and verified before running an analytical test on it to ensure that the output of the data can be considered valid. The assumptions of the different tests are in the Fundamentals of Quantitative Analysis book so you could refer back to the specific chapters to remind yourself: https://psyteachr.github.io/quant-fun-v2/
@@ -316,6 +328,10 @@ At least two  - one for the correlation and one for the t-test. For instance you
 
 This comes from the exceptional webpage: https://rpsychologist.com/viz and in particular the Cohen's d visualisation. To be honest you do not see this in papers and it is not expected that you use it. That said if you want to include as you think it helps then you can.
 
+### Can you convert one effect size into another - e.g. Pearson r into Cohen's d? (added 05/04)
+
+Actually you can, and often a quick search on google, e.g. "Pearson r to Cohen d", will show you some options. One good site is: https://www.escal.site/ The reason this is possible will become evident in future years of study but, in short, a number of the inferential tests that we use (t-tests, correlations, ANOVAs, regression) are all part of the General Linear Model, and the output of one can be converted into another, and as such one effect size can be converted into another. 
+
 ### Should we test one-tailed or two-tailed? And is this not the same as directional and non-directional hypotheses?
 
 So it can help to separate, in your mind, hypotheses and the tails of a test. They are related but not the same thing. The hypothesis is what you predict, and the tails relate to what you actually test. So you can predict a directional effect (e.g. a positive correlation in your hypothesis) but when it comes to running your test you can still test one-tailed or two-tailed. This is not a problem and it is not cheating. Most research probably still states a directional hypothesis but will test with a two-tailed test. Reasons for this include skepticism of one-tailed tests due to previous misuse of them in research but also the two-tailed test allows you to be wrong in your prediction and to still find an effect if there is one to be found. If you test with a one-tailed test then you can only look for an effect or relationship in the direction predicted - predict a positive correlation and can only look for a positive correlation. That is fine if the relationship was positive, but if the relationship was negative then you can't ever find it. You have missed it. If you predict a positive relationship, test two-tailed, and it comes back that the relationship was actually a negative relationship, you can still find it because you said I am going to allow myself to be wrong and to test both directions. Whilst this might sound like cheating because you are looking both ways, the thing to remember is that when you test with a two-tailed test, it is harder to find an effect because your cut-offs are larger as to what would be determined significant. But going back to the question - as we are using pre-registration it is fine to state either a one-tailed test or a two-tailed test as you are stating in advance what you are doing. Again just try to justify the decisions you make.
@@ -335,6 +351,10 @@ So actually this is bad practice for a number of reasons and we would discourage
 ### What would be an appropriate multiple comparison correction in this study? (added 01/04)
 
 Multiple comparison corrections are performed to help maintain the false positive rate at around the chosen level that we say we test at  - with the field standard being alpha = .05 (1 in 20 studies). When you run more studies and analyses you actually increase the false positive rate based on the Family Wise Error Rate; meaning that the false positive rate increases and you are more likely to find a false positive. When you run multiple analyses on the same data you should correct for multiple comparisons in order to maintain the false positive rate at the required level. This becomes slightly a grey area for people when it is different analyses on the same data with some arguing that you don't need to correct and others arguing that you do need to correct. The conservative approach is to correct for multiple comparisons regardless with the two most common approaches being Holm (sometimes called Holm-Bonferroni) and Bonferroni. 
+
+### Is Holm better or Bonferroni better? (added 05/04)
+
+Bonferroni was the standard for a long time but this is maybe simply due to the fact that it is simple to do by hand and by code. Holm is argued to be as effective as Bonferroni in controlling false positives and to have greater statistical power because it has less false negatives (lower Beta; higher Power because Power = 1 - Beta). All that said, this is an incredibly difficult part of statistics to understand and for this assignment it is fine to just use either, neither or none, and try to state why if possible.
 
 # Coding and R Markdown Decisions
 
